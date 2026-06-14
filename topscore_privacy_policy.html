@@ -1,20 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy for TopScore</title>
   <style>
     :root {
-      color-scheme: dark;
-      --bg: #061016;
-      --panel: rgba(8, 22, 32, 0.88);
-      --panel-strong: rgba(12, 34, 48, 0.92);
-      --text: #f4f8fb;
-      --muted: #afc0ca;
-      --accent: #78a8c8;
-      --accent-strong: #2f6fa3;
-      --border: rgba(120, 168, 200, 0.28);
+      --bg: #06131c;
+      --panel: #081b27;
+      --panel-border: #24475c;
+      --text: #f7f7f7;
+      --muted: #c7ddeb;
+      --accent: #8fc9ff;
+      --link: #7fd0ff;
     }
 
     * {
@@ -23,206 +21,193 @@
 
     body {
       margin: 0;
-      min-height: 100vh;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #0b2635 0, var(--bg) 40%, #030a10 100%);
       color: var(--text);
-      background:
-        radial-gradient(circle at 18% 10%, rgba(120, 168, 200, 0.24), transparent 32rem),
-        radial-gradient(circle at 88% 18%, rgba(47, 111, 163, 0.22), transparent 30rem),
-        linear-gradient(145deg, #02070b 0%, var(--bg) 46%, #081923 100%);
-      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      padding: 20px;
     }
 
-    main {
-      width: min(920px, calc(100% - 32px));
+    .container {
+      max-width: 980px;
       margin: 0 auto;
-      padding: 56px 0;
     }
 
-    header {
+    .card {
+      background: rgba(8, 27, 39, 0.92);
+      border: 1px solid var(--panel-border);
+      border-radius: 22px;
       padding: 34px;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: linear-gradient(145deg, var(--panel-strong), rgba(5, 13, 20, 0.78));
-      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+      margin-bottom: 28px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
     }
 
     h1 {
-      margin: 0 0 8px;
-      font-size: clamp(2.1rem, 5vw, 4rem);
+      font-size: clamp(42px, 8vw, 86px);
       line-height: 1;
-      letter-spacing: 0;
-    }
-
-    .updated {
-      margin: 0;
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    .intro {
-      margin: 22px 0 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    section {
-      margin-top: 18px;
-      padding: 26px 30px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: var(--panel);
+      margin: 0 0 18px;
+      font-weight: 900;
+      letter-spacing: -2px;
+      white-space: normal;
     }
 
     h2 {
-      margin: 0 0 12px;
-      font-size: 1.28rem;
-      line-height: 1.25;
-      color: var(--text);
+      font-size: clamp(26px, 4vw, 38px);
+      line-height: 1.2;
+      margin: 0 0 18px;
+      font-weight: 900;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 20px;
     }
 
     p {
-      margin: 0 0 12px;
-      color: var(--muted);
-    }
-
-    p:last-child {
-      margin-bottom: 0;
+      margin: 0 0 16px;
     }
 
     ul {
-      margin: 10px 0 0;
-      padding-left: 1.2rem;
-      color: var(--muted);
+      margin: 12px 0 0;
+      padding-left: 28px;
     }
 
     li {
-      margin: 6px 0;
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      color: var(--accent);
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 32px;
     }
 
     a {
-      color: var(--accent);
-      font-weight: 700;
+      color: var(--link);
       text-decoration: none;
+      font-weight: 700;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    .contact {
-      display: inline-block;
-      margin-top: 4px;
-      padding: 10px 14px;
-      border-radius: 12px;
-      background: rgba(120, 168, 200, 0.12);
-      border: 1px solid rgba(120, 168, 200, 0.22);
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 16px;
+      margin: 32px 0 10px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 12px;
+      }
+
+      .card {
+        padding: 24px;
+        border-radius: 18px;
+      }
+
+      p, li {
+        font-size: 17px;
+      }
+
+      .updated {
+        font-size: 19px;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
-    <header>
+  <main class="container">
+    <section class="card">
       <h1>Privacy Policy for TopScore</h1>
-      <p class="updated">Last updated: May 29, 2026</p>
-      <p class="intro">Welcome to TopScore. This Privacy Policy explains how TopScore collects, uses, and protects information when you use the app to view football match schedules, scores, match details, and reminders.</p>
-    </header>
+      <div class="updated">Last updated: June 14, 2026</div>
+      <p>Welcome to TopScore. This Privacy Policy explains how TopScore collects, uses, and protects information when you use the app.</p>
+      <p>TopScore does not require users to create an account or provide personal information such as a real name, email address, phone number, or physical address.</p>
+    </section>
 
-    <section>
+    <section class="card">
       <h2>1. Information We Collect</h2>
       <p>TopScore may collect limited information necessary for app functionality, including:</p>
       <ul>
-        <li>App preferences, such as language, theme</li>
-        <li>App performance and crash information</li>
-        <li>Advertising and analytics data provided by third-party services</li>
+        <li>Match predictions submitted by users</li>
+        <li>Points, rankings, and leaderboard data</li>
+        <li>A randomly generated player name used for leaderboard participation</li>
+        <li>Anonymous identifiers used by Firebase to associate predictions and leaderboard data with an app installation</li>
+        <li>Advertising-related identifiers and ad interaction data processed by Google AdMob</li>
       </ul>
-      <p>TopScore does not require users to create an account.</p>
+      <p>The randomly generated player name is not intended to identify you personally and may be reset if the app is uninstalled.</p>
     </section>
 
-    <section>
-      <h2>2. Match Scores and Fixtures</h2>
-      <p>TopScore displays football match schedules, teams, venues, live scores, results, and related match information.</p>
-      <p>The app may retrieve match data from cloud services so the schedule, scores, and match details can stay up to date.</p>
+    <section class="card">
+      <h2>2. Firebase Services</h2>
+      <p>TopScore uses Firebase Authentication and Firebase Firestore to support predictions and leaderboards.</p>
+      <p>Firebase Authentication may create an anonymous identifier so the app can associate prediction and leaderboard data with an app installation. Users are not asked to create an account, sign in, or provide personal login details.</p>
+      <p>Firebase Firestore is used to store prediction results, points, rankings, and related leaderboard information.</p>
     </section>
 
-    <section>
-      <h2>3. Local App Preferences</h2>
-      <p>TopScore may store app preferences on your device, such as selected language, theme, and other settings needed to operate the app.</p>
-      <p>These preferences are used to provide the app experience you selected.</p>
+    <section class="card">
+      <h2>3. Advertising</h2>
+      <p>TopScore uses Google AdMob to display rewarded advertisements.</p>
+      <p>Google AdMob may collect and process data such as device identifiers, advertising identifiers, IP address, diagnostic information, and ad interaction data. This data is processed by Google according to Google's privacy policies.</p>
+      <p>You can learn more about Google's privacy practices at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.</p>
     </section>
 
-    <section>
-      <h2>4. Advertising</h2>
-      <p>TopScore may display optional advertisements using third-party advertising providers such as Google AdMob.</p>
-      <p>These providers may collect:</p>
+    <section class="card">
+      <h2>4. Notifications</h2>
+      <p>TopScore may display local notifications on your device, such as reminders related to upcoming matches.</p>
+      <p>These notifications are generated locally on your device. TopScore does not use location data, contacts, camera, microphone, or files for notification functionality.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. How We Use Information</h2>
+      <p>Information collected by TopScore is used to:</p>
       <ul>
-        <li>Device identifiers</li>
-        <li>Approximate location</li>
-        <li>Advertising identifiers</li>
-        <li>Usage statistics</li>
-        <li>Diagnostic information</li>
-      </ul>
-      <p>Advertising may be personalized depending on your consent settings and regional regulations.</p>
-    </section>
-
-    <section>
-      <h2>5. Analytics and Diagnostics</h2>
-      <p>The app may use analytics and crash reporting services to improve stability and performance.</p>
-      <p>Collected information may include:</p>
-      <ul>
-        <li>Device type</li>
-        <li>Android version</li>
-        <li>App version</li>
-        <li>Language</li>
-        <li>Crash logs</li>
-        <li>General usage statistics</li>
+        <li>Save and display match predictions</li>
+        <li>Calculate points and rankings</li>
+        <li>Provide leaderboard functionality</li>
+        <li>Display rewarded ads</li>
       </ul>
     </section>
 
-    <section>
-      <h2>7. Data Storage</h2>
-      <p>TopScore may use cloud services such as Google Firebase to provide and update match schedules, scores, results, and related app data.</p>
-      <p>Some app preferences may be stored locally on your device. Cloud services and third-party providers may process information according to their own privacy policies.</p>
+    <section class="card">
+      <h2>6. Data Sharing</h2>
+      <p>We do not sell your personal information.</p>
+      <p>Some data may be processed by trusted third-party services used by the app, including Google Firebase and Google AdMob. These services process data as necessary to provide app functionality, advertising, security, and fraud prevention.</p>
     </section>
 
-    <section>
+    <section class="card">
+      <h2>7. Data Retention</h2>
+      <p>Prediction and leaderboard data may be stored for as long as necessary to provide app functionality, maintain rankings, and support the competition features of TopScore.</p>
+      <p>If the app is uninstalled, the randomly generated player name and anonymous app installation data may no longer be available on your device.</p>
+    </section>
+
+    <section class="card">
       <h2>8. Children's Privacy</h2>
-      <p>TopScore is not directed toward children under 13 years of age.</p>
+      <p>TopScore is not directed toward children under the age required by local laws for independent consent.</p>
+      <p>If you believe that a child has provided personal information through the app, please contact us so that appropriate action can be taken.</p>
     </section>
 
-    <section>
-      <h2>9. Third-Party Services</h2>
-      <p>The app may use third-party services including:</p>
-      <ul>
-        <li>Google Firebase</li>
-        <li>Google AdMob</li>
-        <li>Android system services</li>
-      </ul>
-      <p>These services may process information according to their own privacy policies.</p>
+    <section class="card">
+      <h2>9. Security</h2>
+      <p>We take reasonable measures to protect information used by TopScore. However, no method of electronic transmission or storage is completely secure.</p>
     </section>
 
-    <section>
-      <h2>10. Your Choices</h2>
-      <p>You may:</p>
-      <ul>
-        <li>Disable notifications</li>
-        <li>Reset advertising identifiers from Android settings</li>
-        <li>Limit ad personalization through your device settings</li>
-        <li>Clear app data or uninstall the app at any time</li>
-      </ul>
+    <section class="card">
+      <h2>10. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted in the app, on our website, or through the Google Play Store listing.</p>
     </section>
 
-    <section>
-      <h2>11. Changes to This Policy</h2>
-      <p>This Privacy Policy may be updated periodically. Changes become effective when the updated policy is published.</p>
-      <p>If TopScore adds new features that collect or use additional data, such as interactive community features, this policy and the app's store data disclosures should be updated before those features are made available.</p>
+    <section class="card">
+      <h2>11. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+      <p><a href="mailto:support@unrstudio.com">support@unrstudio.com</a></p>
     </section>
 
-    <section>
-      <h2>12. Contact</h2>
-      <p>For questions regarding this Privacy Policy, you may contact:</p>
-      <p class="contact">TopScore Support<br>Email: <a href="mailto:support@unrstudio.com">support@unrstudio.com</a></p>
-    </section>
+    <div class="footer">© 2026 UNR Studio. All rights reserved.</div>
   </main>
 </body>
 </html>
