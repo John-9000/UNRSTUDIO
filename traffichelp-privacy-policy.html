@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>Privacy Policy — Traffic Help</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f6f7fb;
+      --surface: #ffffff;
+      --text: #202124;
+      --muted: #5f6368;
+      --accent: #006b68;
+      --border: #dfe3e8;
+      --notice: #fff7df;
+      --notice-border: #d8a900;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #111418;
+        --surface: #1a1f24;
+        --text: #eef1f4;
+        --muted: #b8c0c7;
+        --accent: #7bd7d2;
+        --border: #343b42;
+        --notice: #302a18;
+        --notice-border: #d8a900;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(24px, 5vw, 52px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 14px 40px rgb(0 0 0 / 8%);
+    }
+
+    h1, h2 { line-height: 1.25; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3rem); }
+    h2 { margin: 2.2rem 0 0.65rem; font-size: 1.3rem; }
+    p, ul { margin: 0.65rem 0; }
+    li + li { margin-top: 0.45rem; }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); margin-bottom: 1.8rem; }
+    .summary {
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+    }
+    .setup-notice {
+      margin: 0 0 1.6rem;
+      padding: 14px 16px;
+      background: var(--notice);
+      border: 1px solid var(--notice-border);
+      border-radius: 10px;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+    code { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta"><strong>Traffic Help</strong> · Effective July 17, 2026</p>
+
+    <p class="summary">
+      Traffic Help does not require an account or keep a history of completed route searches. To
+      provide maps, place suggestions, location-based features, and driving routes, the app processes
+      route-planning information through Google Maps Platform and a protected Firebase/Google Cloud
+      backend. It also uses Google services for advertising consent and rewarded ads, app integrity,
+      crash reporting, and Google Play purchases, as described below.
+    </p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      This policy explains how <strong>UNR Studio</strong> (“we”, “us”, or “our”) handles information
+      when you use the Traffic Help Android application.
+    </p>
+
+    <h2>2. Information handled by the app</h2>
+    <ul>
+      <li>
+        <strong>Location.</strong> If you choose the current-location feature and grant Android
+        permission, the app accesses your foreground precise or approximate device location to place
+        you on the map, bias place suggestions, or use it as a route endpoint. Location permission is
+        optional. Traffic Help does not request background location and does not track your location
+        when you are not using the app. You can instead type a place or select a point on the map.
+      </li>
+      <li>
+        <strong>Route and place information.</strong> The app processes the starting point and
+        destination you enter or select, which may include search text, addresses, place names,
+        Google Place IDs, map coordinates, and the map viewport. This information is sent to Google
+        Maps Platform services and, when a route is requested, to our protected backend so the app can
+        provide autocomplete suggestions, resolve locations and time zones, calculate routes, and
+        display route geometry and travel information.
+      </li>
+      <li>
+        <strong>Planning criteria and results.</strong> Route requests may include dates, time
+        ranges, transport mode, and related planning preferences. Our backend processes these values
+        with Google Routes and Time Zone services and returns route recommendations, estimated travel
+        durations, distance, map bounds, and route geometry. Traffic Help does not create a saved
+        route-search history or intentionally retain completed route results after providing them.
+      </li>
+      <li>
+        <strong>Maps and network information.</strong> Google Maps Platform may process IP address,
+        device and app information, map interactions, search requests, and other technical information
+        needed to provide, secure, support, and improve Maps, Places, Routes, and Time Zone services.
+      </li>
+      <li>
+        <strong>App integrity information.</strong> Firebase App Check with Google Play Integrity may
+        process app, device, network, and integrity signals and related identifiers to verify that
+        requests come from an authentic app installation and to protect services from abuse.
+      </li>
+      <li>
+        <strong>Crash and diagnostic information.</strong> Release versions use Firebase Crashlytics.
+        It may process crash traces, app and OS version, device model and architecture, timestamps,
+        installation identifiers, and related technical diagnostics. We use this information to find
+        and fix reliability problems. Debug builds have Crashlytics collection disabled.
+      </li>
+      <li>
+        <strong>Advertising and consent information.</strong> The Google User Messaging Platform is
+        used to request and remember advertising consent where required. If ads may be requested, the
+        Google Mobile Ads SDK may automatically collect and share IP address (which can indicate
+        general location), app interactions such as launches, taps and video views, diagnostic
+        information, and device or account identifiers. Google uses this information for advertising,
+        ad measurement, analytics, and fraud prevention. Depending on your region and choices, ads may
+        be personalized or non-personalized.
+      </li>
+      <li>
+        <strong>Purchases.</strong> Google Play Billing processes subscription payments. We do not
+        receive your full payment-card details. The app can receive product details, purchase status,
+        purchase tokens, and acknowledgement status so that it can determine and provide an
+        entitlement.
+      </li>
+    </ul>
+
+    <p>
+      Traffic Help does not use Firebase Authentication, Firebase Analytics, Cloud Firestore,
+      Realtime Database, or Firebase Storage, and does not create user profiles. Please avoid entering
+      sensitive personal information into place-search fields.
+    </p>
+
+    <h2>3. Why information is used</h2>
+    <p>Information is processed only as needed to:</p>
+    <ul>
+      <li>show maps and provide place search, autocomplete, and map selection;</li>
+      <li>use an optional current location when you request that feature;</li>
+      <li>calculate and display requested routes, travel estimates, and related results;</li>
+      <li>protect the app and backend services from fraud, abuse, and unauthorized clients;</li>
+      <li>diagnose crashes and improve stability;</li>
+      <li>request and respect advertising consent and provide rewarded ads;</li>
+      <li>process and restore Google Play purchases; and</li>
+      <li>comply with legal obligations and enforce applicable terms.</li>
+    </ul>
+    <p>
+      Where applicable, our legal bases include performance of a contract, our legitimate interests
+      in security and reliability, compliance with law, your request for location-based services and
+      the Android permission you grant, and your consent for advertising activities that require
+      consent. You may withdraw permissions or consent at any time; withdrawal does not affect
+      processing that occurred before withdrawal.
+    </p>
+
+    <h2>4. Service providers and sharing</h2>
+    <p>
+      We do not sell your personal information. Information may be processed by Google LLC and its
+      affiliates through Google Maps Platform (including Maps SDK for Android, Places, Routes, and
+      Time Zone services), Firebase Cloud Functions, Firebase App Check, Firebase Crashlytics, Google
+      Play Integrity, Google Mobile Ads, the User Messaging Platform, and Google Play Billing. Google
+      may act as our service provider or as an independent controller depending on the service and
+      context.
+    </p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      <li><a href="https://cloud.google.com/maps-platform/terms">Google Maps Platform Terms</a></li>
+      <li><a href="https://developers.google.com/maps/terms">Google Maps Platform policies</a></li>
+      <li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a></li>
+      <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads data disclosure</a></li>
+      <li><a href="https://policies.google.com/technologies/ads">How Google uses information for advertising</a></li>
+    </ul>
+    <p>
+      We may also disclose information if required by law, to protect users or the public, or as part
+      of a business transfer subject to appropriate safeguards.
+    </p>
+
+    <h2>5. Retention and deletion</h2>
+    <ul>
+      <li>
+        Device location, place selections, route inputs, planning criteria, and returned route content
+        are processed to answer the request. We do not provide user accounts or a saved-search history
+        and do not intentionally retain this content as a user profile or route history. Limited
+        technical request metadata and error logs may be retained temporarily for security,
+        reliability, quota management, and troubleshooting.
+      </li>
+      <li>
+        Firebase states that Crashlytics retains crash traces and associated installation identifiers
+        for 90 days before beginning removal from live and backup systems.
+      </li>
+      <li>
+        App Check, advertising, consent, and purchase information is retained by Google according to
+        the applicable Google terms, user settings, and legal requirements.
+      </li>
+    </ul>
+    <p>
+      You can stop future app collection by uninstalling the app. You can also clear the app’s local
+      data in Android settings, revoke location permission, reset or delete your Android advertising
+      ID, manage advertising choices in <a href="https://myadcenter.google.com/">My Ad Center</a>, and
+      manage subscriptions in Google Play. Because Traffic Help has no accounts or saved route history,
+      there may be no route data associated with you for us to delete. To request deletion of other
+      information that we control, contact us using the address below. We may need limited information
+      to verify and complete a request.
+    </p>
+
+    <h2>6. Security and international processing</h2>
+    <p>
+      We use reasonable technical and organizational safeguards. Network communication with Firebase
+      and Google services is encrypted in transit, and Firebase states that App Check and Crashlytics
+      data are encrypted at rest. No method of transmission or storage is completely secure. Google
+      and its providers may process information in countries other than your own, subject to their
+      legal transfer mechanisms and safeguards.
+    </p>
+
+    <h2>7. Your rights and choices</h2>
+    <p>
+      Depending on where you live, you may have rights to access, correct, delete, restrict, object to,
+      or receive a copy of personal information, and to withdraw consent. You may also have the right
+      to complain to your local data-protection authority. Contact us to exercise rights concerning
+      information we control. Requests concerning Google-controlled data may also be handled through
+      your Google account and Google’s privacy tools. You can deny or revoke location permission in
+      Android settings; doing so disables only features that need the device's current location, and
+      you can continue selecting places by typing or using the map.
+    </p>
+
+    <h2>8. Children</h2>
+    <p>
+      Traffic Help is not directed to children under 13 or the minimum digital-consent age in their
+      country. We do not knowingly collect personal information from children. 
+    </p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>
+      We may update this policy when the app, its service providers, or legal requirements change. We
+      will publish the revised policy with a new effective date. Material changes will be communicated
+      through the app or store listing when appropriate.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      Privacy questions and requests:<br>
+      <strong>UNR Studio</strong><br>
+      Email: support@unrstudio.com
+    </p>
+
+    <footer>
+      This page is a static document and does not use cookies, analytics, forms, or third-party scripts.
+    </footer>
+  </main>
+</body>
+</html>
